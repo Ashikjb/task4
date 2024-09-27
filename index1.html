@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Information</title>
+  <style>
+    body {
+      background: url('img.png') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    .form-container {
+      background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+      border-radius: 10px;
+      padding: 50px;
+      width: 100%; /* Full width on small screens */
+      max-width: 600px; /* Limit max width on larger screens */
+    }
+    table {
+      width: 100%; /* Full width for table */
+      border-collapse: collapse;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      background-color: #fff; /* Ensure input fields are white */
+    }
+    input[type="submit"], input[type="reset"], button {
+      width: 48%; /* Button width */
+      margin: 10px 1%;
+      cursor: pointer;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5em; /* Adjust heading size on small screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <center>
+      <h1>Personal Information</h1>
+      <form>
+        <table>
+          <tr>
+            <td><label for="firstName">First Name:</label></td>
+            <td><input type="text" id="firstName" name="firstName"></td>
+          </tr>
+          <tr>
+            <td><label for="lastName">Last Name:</label></td>
+            <td><input type="text" id="lastName" name="lastName"></td>
+          </tr>
+          <tr>
+            <td><label for="nickName">Nick Name:</label></td>
+            <td><input type="text" id="nickName" name="nickName"></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email"></td>
+          </tr>
+          <tr>
+            <td><label for="password">Password:</label></td>
+            <td><input type="password" id="password" name="password"></td>
+          </tr>
+          <tr>
+            <td><label for="dob">Date of Birth:</label></td>
+            <td><input type="date" id="dob" name="dob"></td>
+          </tr>
+          <tr>
+            <td><label for="gender">Gender:</label></td>
+            <td>
+              <select id="gender" name="gender">
+                <option value="select">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="mobile">Mobile No:</label></td>
+            <td><input type="text" id="mobile" name="mobile"></td>
+          </tr>
+          <tr>
+            <td><label for="address">Address:</label></td>
+            <td><textarea id="address" cols="30" rows="3" name="address"></textarea></td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: center;">
+              <input type="submit" value="Submit">
+              <input type="reset" value="Reset">
+            </td>
+          </tr>
+        </table>
+      </form>
+      <div style="text-align: center;">
+        <button type="button" onclick="window.location.href='mobileview.html';">Login</button>
+      </div>
+    </center>
+  </div>
+</body>
+</html>
